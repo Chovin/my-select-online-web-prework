@@ -1,6 +1,6 @@
 def my_select(collection)
   ret = []
-  collection.each_with_index do |item, i|
+  collection.each do |item|
     ret.push(item) if yield item
   end
   ret
