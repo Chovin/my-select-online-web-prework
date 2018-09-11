@@ -3,4 +3,5 @@ def my_select(collection)
   (0...collection.size).each_with_index do |item, i|
     ret.push(item) if yield item
   end
+  ret
 end
